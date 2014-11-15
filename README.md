@@ -24,6 +24,6 @@ Basic Architechture:
 The website will have a simple user interface that will allow source code submission. All requirments compliance checks will happen on the back end. Each requirment will have a corresponding rest API call. The list of reported websites will be stored in an SQL database.
 
 Tools:
-SQL database
-Back-end: Node.js
-Front-end: Angular.js
+- SQL database
+- Back-end: Node.js
+- Front-end: Angular.js
