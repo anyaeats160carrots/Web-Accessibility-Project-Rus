@@ -5,7 +5,7 @@ Websites should be accessible for everyone. For this purpose there are specific 
 This web service will provide an easy way for website owners to check if their services are accessible. Users will be able to submit their html/css code on the website and get a list of requirements they do not follow in Russian language. The service will have a REST API to enable different design/language solutions.
 
 Planned to implement in 2014:
-- Website UI design
+- [Website UI design]()
 - Checks for the following WSAG 2.0 guildelines:
   - Guideline 1.1
   - Guideline 2.1
