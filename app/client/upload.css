@@ -1,0 +1,111 @@
+/* colors:
+blue: #1aaae6
+orange: #f15721
+yellow: #f8c337
+grey: #414141
+light-grey: #ccc
+liiiight-grey: #eee
+dark-grey: #1f1f1f
+*/
+
+h1 {
+    margin-bottom: 5px;
+    
+}
+
+h2 {
+    padding: 0;
+    margin: 0;
+}
+    
+/*
+section:nth-of-type(1) {
+    padding: 20px;
+    background-color: #1f1f1f;
+    margin: 0;
+    text-align: center;
+    color: #eee;
+}
+*/
+
+section:nth-of-type(1) {
+/*    background-color: #ccc;*/
+	color: #fff;
+}
+
+section:nth-of-type(2) {
+    background-color: #eee;
+}
+
+
+
+section.code form span {
+    width:45%;
+    display: inline-block;
+    position: inherit;
+    padding: 0 5px 0 5px;
+    
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox 28 and earlier*/
+}
+
+section {
+    width: 100%;
+    margin: 0;
+    
+    display: block;
+    position: relative;
+    
+    padding: 20px 10% 20px 10%;
+    
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox 28 and earlier*/
+    
+    text-align: center;
+}
+
+.button {
+    margin: 5px;
+}
+
+
+
+/*upload button*/
+
+div.upload div {
+    margin: 15px;
+}
+.upload label {
+	cursor: pointer;
+    background-color: #1f1f1f;
+    color: #eee;
+    padding: 5px;
+}
+
+.upload label:hover, .upload label:focus {
+	border-color: #f8c337;
+}
+
+div.upload {
+    display: block;
+    margin: 30px;
+}
+
+
+#csspl, #htmlpl {
+    color: #444;
+}
+
+form div:first-of-type {
+    /*margin: 20px;*/
+}
+
+
+.popupcontent {
+	width: 100px;
+	height: 100px;
+	
+	font-size: 1rem;
+	
+	padding: auto;
+}

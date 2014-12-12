@@ -1,0 +1,69 @@
+<html>
+	<head>
+	<meta charset="utf-8" lang="ru"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+	<link href='http://fonts.googleapis.com/css?family=Cousine|Ubuntu+Condensed&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="common.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="upload.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="media-queries.css" media="screen" />
+
+	<title>CYA - Проверка доступности веб-сайтов</title>
+	</head>
+	<body>
+
+<!--
+		<section>
+		<h1>
+			Загрузите код страницы
+		</h1>    
+		<p>Выберите удобный способ предоставления кода для проверки</p>
+		</section>
+-->
+
+		<section class="code">
+				<h2>Ввести код</h2>
+				<form method="post" action="javascript:popup()"  id="codeform">
+						<span>
+								<h3>HTML</h3>
+								<br/>
+								<textarea name="htmlstring" id="t1"></textarea>
+						</span>
+						<span>
+								<h3>CSS</h3>
+								<br/>
+								<textarea name="cssstring" id="t2"></textarea>
+						</span>
+						<textarea name="flag" class="hide">1</textarea>
+						<input type="submit" value="Сделать &#10; мир лучше" class="button" id="codebutton" />
+				</form>
+		</section>
+
+		<section class="upload">
+				<h2>Загрузить файл</h2>
+				<form enctype="multipart/form-data" method="POST" id="uploadform" action="javascript:popup()" >
+						<input type="hidden" name="MAX_FILE_SIZE" value="30000" />
+
+						<div class="upload">
+								<div>
+										<label for="htmlfile" class="button">HTML</label>
+										<input name="htmlfile" type="file" class="upload hide" id="htmlfile" />
+										<span id="htmlpl">Выберите html-файл</span>
+								</div>
+								<div>
+										<label for="cssfile" class="button">CSS</label>
+										<input name="cssfile" type="file" class="upload hide" id="cssfile" />
+										<span id="csspl">Выберите css-файл</span>
+								</div>
+						</div>
+
+						<input type="submit" value="Сделать &#10; мир лучше" class="button" id="uploadbutton" />
+						<textarea name="flag"  class="hide">2</textarea>
+				</form>
+		</section>
+		
+		<footer>
+			<span><p>&#169; М.А. Соколова, 2014</p><p>Москва</p><p><a href="mailto:hello@cyaproject.ru" title="Связаться со мной">hello@cyaproject.ru</a></p></span>
+			<span><p>Сделано с &#9829;</p></span>
+		</footer>    
+	</body>
+</html>
