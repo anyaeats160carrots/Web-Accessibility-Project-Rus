@@ -6,17 +6,13 @@ This web service will provide an easy way for website owners to check if their s
 
 Planned to implement in 2014:
 - [Website UI design]()
-- Checks for the following WSAG 2.0 guildelines:
-  - Guideline 1.1
-  - Guideline 2.1
-  - Guideline 3.1
-  - Guideline 4.1
+- Checks for four WCAG 2.0 requirements
 - API that can be used to check for each guideline
 - Clear explanation of violated guidelines to the user
 - A page where users can report inaccessible websites and view the list of reported websites to motivate owners to change their design. Website owners can request to remove their website from the list on the page.
 
 Planned to implement in 2015:
-- Other WSAG 2.0 guidelines that can be programmatically checked for
+- Other WCAG 2.0 guidelines that can be programmatically checked for
 - A tool that would show the user specific places where their code is not compliant with the guidelines
 - A plug-in version of the service that NGOs and other interested parties can build into their websites to promote accessibility
 
