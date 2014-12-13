@@ -146,12 +146,7 @@ and (orientation : portrait) {
 	
 	label[for=menu] {
 		display: block;
-		z-index: 999;
-		margin-right: 10%;
-	}
-	
-	nav {
-		
+		z-index: 999;		
 	}
 
 	nav ul {
@@ -159,21 +154,15 @@ and (orientation : portrait) {
 		padding-bottom: 1px;
 		padding-top: 5px;
 		
-		margin-top: 60px;
-		
 		z-index: -1;
 		
-		transform: translateY(-300px);
-    	-ms-transform: translateY(-300px); /* IE 9 */
-    	-webkit-transform: translateY(-300px); /* Opera, Chrome, and Safari */
+		margin-top:-300px;
 		
 		opacity: 0;
 		filter: opacity(0);
 		
-		transition-property: transform, -ms-transform, -webkit-transform, opacity, filter;
-    	transition-duration: .3s;
-    	-webkit-transition-property: transform, -ms-transform, -webkit-transform, opacity, filter; /* Safari */
-    	-webkit-transition-duration:.3s; /* Safari */
+		transition: all .3s;
+    	-webkit-transition: all .3s; /* Safari */
 	}
 	
 	nav ul li {
@@ -182,9 +171,7 @@ and (orientation : portrait) {
 	}
 	
 	#menu:checked+ul {
-		transform: translateY(0);
-    	-ms-transform: translateY(0); /* IE 9 */
-    	-webkit-transform: translateY(0); /* Opera, Chrome, and Safari */
+		margin-top:45px;
 		
 		opacity: 1;
 		filter: opacity(100);
@@ -198,7 +185,7 @@ and (orientation : portrait) {
 	}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 950px) {
 	
 		* {
 		word-break:normal;	
@@ -234,34 +221,23 @@ and (orientation : portrait) {
 	
 	label[for=menu] {
 		display: block;
-		z-index: 999;
-		margin-right: 10%;
-	}
-	
-	nav {
-		
+		z-index: 999;		
 	}
 
-	nav ul {
+    nav ul {
 		padding: 0;
 		padding-bottom: 1px;
 		padding-top: 5px;
 		
-		margin-top: 60px;
-		
 		z-index: -1;
 		
-		transform: translateY(-300px);
-    	-ms-transform: translateY(-300px); /* IE 9 */
-    	-webkit-transform: translateY(-300px); /* Opera, Chrome, and Safari */
+		margin-top:-300px;
 		
 		opacity: 0;
 		filter: opacity(0);
 		
-		transition-property: transform, -ms-transform, -webkit-transform, opacity, filter;
-    	transition-duration: .3s;
-    	-webkit-transition-property: transform, -ms-transform, -webkit-transform, opacity, filter; /* Safari */
-    	-webkit-transition-duration:.3s; /* Safari */
+		transition: all .3s;
+    	-webkit-transition: all .3s; /* Safari */
 	}
 	
 	nav ul li {
@@ -270,9 +246,7 @@ and (orientation : portrait) {
 	}
 	
 	#menu:checked+ul {
-		transform: translateY(0);
-    	-ms-transform: translateY(0); /* IE 9 */
-    	-webkit-transform: translateY(0); /* Opera, Chrome, and Safari */
+		margin-top:45px;
 		
 		opacity: 1;
 		filter: opacity(100);

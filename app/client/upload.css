@@ -117,3 +117,7 @@ form div:first-of-type {
 	
 	padding: auto;
 }
+
+.ng-invalid {
+    background-color: red;
+}

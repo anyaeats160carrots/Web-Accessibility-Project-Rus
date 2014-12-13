@@ -1,12 +1,18 @@
 <html ng-app="">
     <head>
+        <script src="http://yandex.st/jquery/1.9.1/jquery.min.js"></script>
+        <script src="app-ctrl.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+        <!--  Arctic Modals -->
+        <script src="http://arcticlab.ru/arcticmodal/js/arcticmodal/jquery.arcticmodal-0.3.min.js"></script>
+        <script src="modal.js"></script>
         <meta charset="utf-8" lang="ru"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
         <link href='http://fonts.googleapis.com/css?family=Cousine|Ubuntu+Condensed&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="common.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="upload.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="media-queries.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="http://arcticlab.ru/arcticmodal/js/arcticmodal/jquery.arcticmodal-0.3.css" media="screen" />
     </head>
         <header>
             <div class="header">
@@ -14,12 +20,27 @@
             </div>
         </header>
     <body>
-        <div class="container">
-            <div ng-include="'main.htm'"></div>
+      <span data-modal="#modal">Open Modal</span>
+        <div class="container main">
+          <div ng-include="'main.htm'"></div>
         </div>
     </body>
     <footer>
         <span><p><a href="mailto:hello@cyaproject.ru" title="Связаться со мной">hello@cyaproject.ru</a></p></span>
         <span><p>Сделано с &#9829;</p></span>
     </footer>
+  
+  
+<!--  МОДАЛКА!!!-->
+  <div style="display: none;">
+    <div class="box-modal" id="modal">
+      <div class="box-modal_close arcticmodal-close"></div>
+      Пример модального окна
+      <ul class="errors">
+        <li class="y">Это хорошо</li>
+        <li class="n">А это плохо</li>
+      </ul>
+    </div>
+  </div>
+  
 </html>
